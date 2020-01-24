@@ -34,7 +34,7 @@
 				<username>mani21</username>
 				<password>Maninene@21</password>
 				<muleVersion>4.2.0</muleVersion>
-				<environment>sandbox</environment>
+				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
 				<applicationName>poc-on-jenkins</applicationName>
