@@ -9,9 +9,6 @@
     <packaging>mule-application</packaging>
 
 
-
-
-
 	<name>poc-on-jenkins</name>
 
     <properties>
