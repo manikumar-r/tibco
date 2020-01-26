@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.mycompany</groupId>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.2.2</modelVersion>
+	<groupId>lti</groupId>
 	<artifactId>poc-on-jenkins2</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
-	<name>poc-on-jenkins2</name>
+	<name> mule poc-on-jenkins2 application</name>
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,21 +24,21 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				
-      <muleVersion>4.2.0</muleVersion>
-      <uri>https://anypoint.mulesoft.com</uri>
-       <target>onpremesis</target>
-      <targetType>server</targetType>
-      <username>mani@21</username>
-      <password>Maninene@21</password>
-     <environment>Sandbox</environment>
      <copyToAppsDirectory>true</copyToAppsDirectory>
-      <properties>
-        
-      </properties>
-    
 				</configuration>
 				
+			</plugin>
+			<plugin>
+			<artifactId>maven-deploy-plugin</artifactId>
+			<executions>
+			<execution>
+			<id>default-deploy</id>
+			<phase>deploy</phase>
+			<goals>
+			<goal>deploy</goal>
+			</goals>
+			</execution>
+			</executions>
 			</plugin>
 		</plugins>
 	</build>
