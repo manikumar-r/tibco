@@ -12,7 +12,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<app.runtime>4.2.0</app.runtime>
 		<mule.tools.version>1.2</mule.tools.version>
-		<project.site.deploy.url>E:\mule-ee-distribution-standalone-3.9.3-hf2\mule-enterprise-standalone-3.9.3-hf2\apps</project.site.deploy.url>
+		<project.site.deploy.url>V:\mule-ee-distribution-standalone-4.2.2\mule-enterprise-standalone-4.2.2\apps</project.site.deploy.url>
 		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
 	</properties>
 	
